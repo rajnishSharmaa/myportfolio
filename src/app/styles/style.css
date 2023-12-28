@@ -45,6 +45,13 @@
     background-color: black;
     height: 100vh;
 }
+.nav-menu{
+    display: flex;
+    gap: 20px;
+}
+.hamburger{
+    display: none; 
+}
 
 .third {
     color: white;
@@ -64,8 +71,28 @@
 
 @media (min-width: 100px) and (max-width: 481px) {
     .nav-bar {
-        background-color: white;
+        background-color: rgb(252, 252, 252);
         color: black;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color:aliceblue; 
+        height: 100vh;
+        background: rgb(0, 0, 0) ;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+    }
+    .hamburger{
+        display: initial;
+        
     }
 
     .second {

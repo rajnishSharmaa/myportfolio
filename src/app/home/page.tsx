@@ -2,11 +2,16 @@
 import { useRouter } from 'next/navigation'
 import "../styles/style.css"
 import Link from 'next/link'
+import { useState } from 'react'
+import { FaBars, FaTimes } from "react-icons/fa";
 
 
 
 export default function Home() {
   let router = useRouter()
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
     <>
       <div className='main'>
@@ -16,7 +21,9 @@ export default function Home() {
           </div>
 
           <div className='menu'>
-            <ul className="hidden md:flex gap-x-6 text-white">
+            {/* <ul className="nav-menu gap-x-6"> */}
+            {/* <ul className="hidden md:flex gap-x-6 text-white"> */}
+            <ul className={click ? ("nav-menu active") : ("nav-menu")}>
               <li>
                 <Link href="/skills">
                   <p >SKILLS</p>
@@ -37,7 +44,14 @@ export default function Home() {
                   <p >CONTACT</p>
                 </Link>
               </li>
+             
             </ul>
+            <div className="hamburger" onClick={handleClick}>
+
+{click ? (<FaTimes size={20} style={{ color: "#000000" }} />) : (<FaBars size={20} style={{ color: "#000000" }} />)}
+
+</div>
+          
           </div>
 
         </div>

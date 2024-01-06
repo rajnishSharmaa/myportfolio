@@ -84,10 +84,10 @@ export default function Home() {
         
           </div>
           <div className='ab'>
-            <p className='whoim text-white'>Who I am ?</p>
-            <h3 className='aboutme text-white'><b>About Me</b></h3>
-            <p className='aboutmedesc text-white'>Myself Rajnish Sharma, I am a software developer in IT industry.
-              I have been working in this industry for almost a year now. 
+            <p className='whoim text-black'>Who I am ?</p>
+            <h3 className='aboutme text-black'><b>About Me</b></h3>
+            <p className='aboutmedesc text-black'>Myself Rajnish Sharma, I am a software developer in IT industry.
+              I have been working in this industry for almost a year now.
               When I was young, I used to wonder how everything runs on the internet,
               and today is the day that what I create is running on the internet.</p>
 

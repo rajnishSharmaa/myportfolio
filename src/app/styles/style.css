@@ -16,6 +16,8 @@
 
 .main {
     background-color: rgb(0, 0, 0);
+    height: auto;
+   
 
 }
 
@@ -77,6 +79,7 @@
 }
 .ab{
     margin-bottom: 50px;
+  
 }
 .aboutmedesc{
     text-align: left;
@@ -95,6 +98,7 @@
     .aboutmedesc{
     text-align: left;
     padding: 10px;
+    text-align: center;
     }
     .whoim{
     margin-top: 10px;

@@ -85,6 +85,9 @@
     text-align: left;
     padding: 10px;
     }
+    .aboutimg{
+       margin-left: -12%;
+    }
 
 @media (min-width: 100px) and (max-width: 481px) {
 
@@ -95,6 +98,10 @@
       
       
     }
+    .aboutimg{
+        margin-left: 0%;
+     }
+ 
     .aboutmedesc{
     text-align: left;
     padding: 10px;

@@ -68,27 +68,74 @@
 
 
 }
+.about{
+    display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  
+}
+.ab{
+    margin-bottom: 50px;
+}
+.aboutmedesc{
+    text-align: left;
+    padding: 10px;
+    }
 
 @media (min-width: 100px) and (max-width: 481px) {
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+      
+      
+    }
+    .aboutmedesc{
+    text-align: left;
+    padding: 10px;
+    }
+    .whoim{
+    margin-top: 10px;
+      text-align: center;
+    }
+    .aboutme{
+        margin-top: 5px;
+       
+        text-align: center;
+    }
     .nav-bar {
         background-color: rgb(252, 252, 252);
         color: black;
     }
+    .p-ongoing{
+        background-color: white;
+        color: black;
+    }
     .nav-menu.active{
         left: 0;
+        display: initial;
     }
     .nav-menu{
-        flex-direction: column;
+        flex-direction: column; 
+        display: initial;
         justify-content: center;
-        align-items: center;
+         align-items: center; 
         width: 100%;
         color:aliceblue; 
-        height: 100vh;
-        background: rgb(0, 0, 0) ;
-        position: absolute;
-        top: 0;
-        left: -100%;
+        height: 100vh; 
+        background: rgb(221, 10, 10) ;
+         /* position: absolute;    */
+        top: 100;
+        display: none;
+        /* left: -100%; */
         z-index: -3;
+    }
+    .menu ul {
+        color: rgb(171, 199, 10);
+       
+    
     }
     .hamburger{
         display: initial;

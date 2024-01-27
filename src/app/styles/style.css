@@ -44,6 +44,11 @@
     margin-top: 20px;
 }
 
+.project:hover {
+    color: black;
+    background-color: white;
+}
+
 .projectmain {
     background-color: black;
     height: 100vh;
@@ -106,18 +111,31 @@
 }
 
 .form {
-    padding: 10%;
+    padding: 13%;
+
 }
 
 .btn {
-
+    width: 150px;
+    border: 1px solid white;
+    padding: 10px;
     color: white;
-    border-color: rgb(238, 5, 5);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
 }
 
 .form-control {
+    width: 300px;
+    border: 1px solid white;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 0 10px 0;
+    background-color: black;
 }
 
 @media (min-width: 100px) and (max-width: 481px) {

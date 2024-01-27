@@ -62,7 +62,7 @@ export default function Home() {
           <h1 className='text-white'>Hii, I'm RAJNISH SHARMA</h1>
           <h1 className='sd'><strong>Software Developer</strong></h1>
           <h1 className='desc'>This is my official portfolio website to showcase my all work related to web devlopment and UI design</h1>
-          <button className='project'><Link href="/projects">
+          <button className='project'><Link href="/login">
             <p>Check - <strong>PROJECT</strong></p>
           </Link></button>
         </div>
@@ -72,7 +72,7 @@ export default function Home() {
 
 
 
-        <div className='about'>
+        {/* <div className='about'>
 
           <div className='aboutimg'>
             <Image
@@ -92,7 +92,7 @@ export default function Home() {
               and today is the day that what I create is running on the internet.</p>
 
           </div>
-        </div>
+        </div> */}
 
 
       </div>

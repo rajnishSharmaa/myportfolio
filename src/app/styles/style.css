@@ -141,7 +141,8 @@
 @media (min-width: 100px) and (max-width: 481px) {
 
     .form {
-        padding: 20%;
+        padding: 11%;
+        margin-top: 20px;
     
     }
     .about {

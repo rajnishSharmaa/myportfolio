@@ -140,6 +140,10 @@
 
 @media (min-width: 100px) and (max-width: 481px) {
 
+    .form {
+        padding: 20%;
+    
+    }
     .about {
         display: flex;
         flex-direction: column;

@@ -1,7 +1,11 @@
-import Image from 'next/image'
+
+import Front from './front/page'
 
 export default function Home() {
   return (
-  <h1>Welcome</h1>
+    <>
+
+      <Front />
+    </>
   )
 }

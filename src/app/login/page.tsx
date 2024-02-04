@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import { Formik, Field, Form, FormikHelpers } from 'formik';
+import { Field, Form } from 'formik';
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import "../styles/style.css"
@@ -9,13 +9,32 @@ import Link from 'next/link'
 import { useState } from 'react'
 const login = () => {
 
-  interface Values {
-    username: string;
-    password: string;
-  }
+
   let router = useRouter()
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
+  // async function onSubmit() {
+  //   // event.preventDefault()
+  //   // Clear previous errors when a new request starts
+ 
+  //   try {
+  //     // const formData = new FormData(event.currentTarget)
+  //     const response = await fetch('/api/submit', {
+  //       method: 'POST',
+  //       // body: formData,
+  //     })
+ 
+     
+ 
+     
+  //   } catch (error) {
+  //     // Capture the error message to display to the user
+    
+  //     console.log(error)
+  //   }
+  // }
+  
 
   return (
     <>
@@ -62,26 +81,10 @@ const login = () => {
 
         </div>
         {/* <h1 className="display-6 mb-3 text-white p-5">Login</h1> */}
-        <Formik
-          initialValues={{
-            username: '',
-            password: '',
-          }}
-
-          onSubmit={(
-            values: Values,
-            { setSubmitting }: FormikHelpers<Values>
-          ) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 500);
-          }}
-
-        >
-          <Form className='form'>
+  
+      <Form className='form'>
             <div className="mb-3">
-              <Field className="form-control" id="username" name="email" placeholder="Email" aria-describedby="usernameHelp" />
+              <Field className="form-control" id="email" name="email" placeholder="Email" />
             </div>
 
             <div className="mb-3">
@@ -90,7 +93,7 @@ const login = () => {
 
             <button type="submit" className="btn">Login</button>
           </Form>
-        </Formik>
+        
       </div>
     </>
   )

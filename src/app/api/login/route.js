@@ -28,12 +28,12 @@ export async function GET(request) {
 }
 
 export async function POST(request) {
-  const { name, email, password, about } = await request.json();
+  const {  email, password } = await request.json();
   const user = new User({
-    name,
+   
     email,
     password,
-    about,
+  
   });
 
   try {

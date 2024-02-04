@@ -4,8 +4,8 @@ import "../styles/style.css"
 import Link from 'next/link'
 import { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
-import Image from 'next/image'
-import aboutmeimg from "../img/1680015953150.jpg"
+// import Image from 'next/image'
+// import aboutmeimg from "../img/1680015953150.jpg"
 import { Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
 import React from "react";
 
@@ -14,7 +14,7 @@ export default function Home() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const [isFollowed, setIsFollowed] = React.useState(false);
+  // const [isFollowed, setIsFollowed] = React.useState(false);
   return (
     <>
       <div className='main'>
